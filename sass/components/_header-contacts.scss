@@ -1,0 +1,163 @@
+.contacts {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @include tablet {
+    display: block;
+    margin-left: auto;
+    align-items: center;
+  }
+  @include desktop {
+    display: flex;
+  }
+}
+
+.contacts__link {
+  color: var(--secondary-text-color);
+  text-decoration: none;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: #2196f3;
+  }
+  @include tablet {
+    @include font(500, 12px, 1.14, 0.02em);
+  }
+  @include desktop {
+    @include font(500, 14px, 1.14, 0.02em);
+  }
+}
+
+.contacts__link {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.contacts__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.contacts__icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.contacts-email {
+  @include desktop {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.contacts-phone {
+  @include desktop {
+    width: 10px;
+    height: 16px;
+  }
+}
+
+.menu-open {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-open,
+.menu-close {
+  background-color: transparent;
+  border: none;
+}
+
+.menu-close {
+  position: absolute;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 30px;
+  cursor: pointer;
+  top: 10px;
+  right: 15px;
+}
+
+.menu-open__icon {
+  fill: black;
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  z-index: 5;
+  > .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding-top: 40px;
+    padding-bottom: 48px;
+  }
+}
+
+.mob-menu__link {
+  margin-bottom: 32px;
+  padding: 0;
+  font-style: normal;
+  @include font(500, 40px, 1.18, 0.02em);
+  text-decoration: none;
+  color: #212121;
+}
+.mob-menu__link:hover {
+  color: var(--accent-blue-color);
+}
+
+.mob-menu__top {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-top: 40px;
+  padding-left: 48px;
+}
+
+.mob-menu__buton {
+  padding-top: 40px;
+  padding-left: 48px;
+}
+
+.contacts-tel__link {
+  font-style: normal;
+  text-decoration: none;
+  @include font(500, 34px, 1.18, 0.02em);
+  color: var(--accent-blue-color);
+}
+
+.contacts-mail__link {
+  padding-top: 0;
+  padding-bottom: 64px;
+  font-style: normal;
+  text-decoration: none;
+  @include font(500, 24px, 1.17, 0.02em);
+  color: var(--secondary-text-color);
+}
+
+.mob-soc__list {
+  display: flex;
+  gap: 20px;
+}
+
+.mob-soc__link {
+  padding-right: 10px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-style: normal;
+  text-decoration: none;
+  @include font(500, 18px, 1.22, 0.02em);
+  color: var(--accent-blue-color);
+}
+.mob-soc__item {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
