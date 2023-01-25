@@ -35,13 +35,13 @@
   }
   @include desktop {
     margin-right: 70px;
+    text-align: start;
   }
 }
 
 .footer__logo {
   color: var(--accent-blue-color);
   font-family: "Raleway", sans-serif;
-  text-align: center;
   @include font(700, 24px, 1.17, null);
   text-decoration: none;
   @include desktop {

@@ -111,7 +111,7 @@
   text-decoration: none;
   color: #212121;
 }
-.mob-menu__link:hover {
+.mob-menu__link.current {
   color: var(--accent-blue-color);
 }
 
@@ -131,7 +131,7 @@
 .contacts-tel__link {
   font-style: normal;
   text-decoration: none;
-  @include font(500, 34px, 1.18, 0.02em);
+  @include font(500, 26px, 1.18, 0.02em);
   color: var(--accent-blue-color);
 }
 
@@ -146,6 +146,7 @@
 
 .mob-soc__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 

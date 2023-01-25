@@ -41,9 +41,10 @@
 
 .principles__text {
   @include font(null, 14px, 1.71, null);
-  // font-size: 14px;
-  // line-height: 1.71;
   &:not(:last-child) {
     margin-bottom: 30px;
   }
+}
+.principles__item:not(:last-child) {
+  margin-bottom: 30px;
 }

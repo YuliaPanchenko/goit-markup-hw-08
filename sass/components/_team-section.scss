@@ -41,7 +41,16 @@
     width: calc((100% - 90px) / 4);
   }
 }
-
+.team__item:not(:last-child) {
+  @include mobile {
+    margin-bottom: 30px;
+  }
+}
+.team__item:not(:last-child) {
+  @include tablet {
+    margin-bottom: 0;
+  }
+}
 /* width: calc((100% - 90px) / 4); */
 
 .team__person {
