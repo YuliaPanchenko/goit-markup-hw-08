@@ -438,7 +438,7 @@ img {
 @media screen and (min-width: 1200px) {
   .contacts {
     display: flex;
-    align-items: start;
+    align-items: baseline;
   }
 }
 
@@ -1028,6 +1028,7 @@ img {
   .footer-tab__wrap {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 60px;
   }
 }
 
