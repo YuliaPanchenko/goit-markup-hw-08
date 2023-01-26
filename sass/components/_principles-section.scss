@@ -3,6 +3,9 @@
   text-align: center;
   @include font(null, 14px, 1.14, null);
   text-transform: uppercase;
+  @include tablet {
+    text-align: start;
+  }
 }
 
 .principles__list {
