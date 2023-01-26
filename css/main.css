@@ -1028,6 +1028,10 @@ img {
   .footer-tab__wrap {
     display: flex;
     justify-content: space-around;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-tab__wrap {
     margin-bottom: 60px;
   }
 }
